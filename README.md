@@ -1,2 +1,2 @@
-# PythonPractice
+# PythonStudy
 Some Body Help Me
