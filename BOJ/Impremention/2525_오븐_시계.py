@@ -4,7 +4,7 @@ C = int(input())
 
 total = B + C
 
-share = total // 60  # Á¤¼ö ³ª´°¼À
+share = total // 60  # Á¤¼ö ³ª´°¼À # /Àº ½Ç¼öÇüÀ¸·Î ³ª¿È
 remainder = total % 60
 
 A=A+share
