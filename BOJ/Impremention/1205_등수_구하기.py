@@ -1,19 +1,16 @@
+# -*- coding: utf-8 -*-
+
 def cmp(a):
     return -a[0]  # 내림차순 정렬
 
 def main():
-    import sys
-    input = sys.stdin.read
-    data = input().split()
-    
-    N = int(data[0])
-    new_score = int(data[1])
-    P = int(data[2])
+    N,new_score,P = map(int, input().split())
     
     vec = []
-    for i in range(N):
-        num = int(data[3 + i])
-        vec.append((num, 0))
+    if N!=0:
+        scores = map(int, input().split())
+        for score in scores:
+            vec.append((score, 0))
     
     vec.append((new_score, 1))
     
@@ -23,9 +20,8 @@ def main():
     real_rank = 0
     front_score = 0
     same_rank = 0
-    iter_vec = iter(vec)
     
-    for i, (score, check_point) in enumerate(iter_vec):
+    for i, (score, check_point) in enumerate(vec):
         if i == 0:
             front_score = score
             real_rank += 1
